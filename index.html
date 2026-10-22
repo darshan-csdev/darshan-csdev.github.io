@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Darshan N - Aspiring QA Tester and Manual Testing Portfolio">
+  <title>Darshan N | QA Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #090e19; color: #e5eaf3;
+      font-family: "Segoe UI", Arial, sans-serif; line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 24px 0; border-bottom: 1px solid #202b3d;
+    }
+    .logo { font-weight: 800; letter-spacing: 1px; }
+    .logo span, .accent { color: #5eead4; }
+    .nav-links { display: flex; gap: 24px; color: #a9b6ca; font-size: 14px; }
+    .nav-links a:hover, .text-link:hover { color: #5eead4; }
+    .hero { padding: 100px 0 85px; }
+    .eyebrow { color: #5eead4; font-size: 12px; letter-spacing: 3px; font-weight: 700; }
+    h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1.1; margin: 20px 0; letter-spacing: -2px; }
+    .hero p { max-width: 650px; color: #a9b6ca; font-size: 18px; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: 8px;
+      font-weight: 700; border: 1px solid #5eead4; transition: .2s;
+    }
+    .btn-primary { background: #5eead4; color: #07111a; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-outline { color: #5eead4; }
+    section { padding: 58px 0; border-top: 1px solid #202b3d; }
+    .section-label { color: #5eead4; font-size: 12px; letter-spacing: 2px; }
+    h2 { font-size: 32px; margin: 8px 0 24px; }
+    .section-intro { color: #a9b6ca; max-width: 720px; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card {
+      padding: 24px; background: #101827; border: 1px solid #263349;
+      border-radius: 14px;
+    }
+    .card h3 { margin: 8px 0; }
+    .card p, .muted { color: #a9b6ca; font-size: 14px; }
+    .icon { font-size: 24px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .tag {
+      padding: 5px 10px; border-radius: 6px; background: #172b32;
+      color: #80f0dc; font-size: 12px;
+    }
+    .project-card { border-color: #2d625e; }
+    .project-card .btn { margin-top: 12px; }
+    .project-number { color: #5eead4; font-size: 13px; }
+    .contact-box {
+      padding: 30px; background: #101827; border: 1px solid #263349;
+      border-radius: 14px;
+    }
+    footer { padding: 28px 0; border-top: 1px solid #202b3d; color: #8190a8; font-size: 13px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 700px) {
+      .nav-links { gap: 12px; font-size: 12px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 70px 0; }
+      h1 { letter-spacing: -1px; }
+    }
+    @media (max-width: 420px) {
+      nav { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .nav-links { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <a class="logo" href="#home">DARSHAN N<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero" id="home">
+      <div class="eyebrow">ASPIRING SOFTWARE TESTER</div>
+      <h1>Finding issues.<br><span class="accent">Building quality.</span></h1>
+      <p>
+        I'm Darshan, a Computer Science student developing practical skills
+        in manual software testing, test case design, and quality assurance.
+        I enjoy understanding how applications work and checking how they behave.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">Explore My Project ↗</a>
+        <a class="btn btn-outline" href="https://github.com/darshan-csdev" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <h2>A little about me.</h2>
+      <p class="section-intro">
+        I am a BSc Computer Science student learning software quality assurance
+        through hands-on practice. I have practiced writing test cases,
+        checking expected and actual results, validating forms, and organizing
+        screenshots as test evidence. I'm looking for opportunities to grow
+        as a Software Testing or QA Intern.
+      </p>
+    </section>
+
+    <section id="skills">
+      <div class="section-label">02 / SKILLS</div>
+      <h2>What I'm learning.</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="icon">⌕</div>
+          <h3>Manual Testing</h3>
+          <p>Functional testing, positive and negative test scenarios, and checking application behaviour.</p>
+        </article>
+        <article class="card">
+          <div class="icon">▤</div>
+          <h3>Test Documentation</h3>
+          <p>Writing test cases, recording expected and actual results, and tracking execution status.</p>
+        </article>
+        <article class="card">
+          <div class="icon">✓</div>
+          <h3>Tools & Evidence</h3>
+          <p>Google Sheets, Chrome browser testing, GitHub repositories, and screenshot evidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-label">03 / PROJECTS</div>
+      <h2>Featured work.</h2>
+      <p class="section-intro">A personal practice project to apply manual testing concepts to an e-commerce demo application.</p>
+      <article class="card project-card">
+        <div class="project-number">PROJECT 01 · PERSONAL PRACTICE</div>
+        <h3>ShopKart E-commerce — Manual Testing</h3>
+        <p>
+          Practiced testing product search, filters, sorting, cart operations,
+          coupon validation, checkout forms, order history, order cancellation,
+          login, and logout.
+        </p>
+        <div class="tags">
+          <span class="tag">Manual Testing</span>
+          <span class="tag">30 Test Cases</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Test Evidence</span>
+        </div>
+        <a class="btn btn-primary" href="https://github.com/darshan-csdev/shopkart-qa-testing" target="_blank" rel="noopener noreferrer">View Test Project ↗</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <div class="section-label">04 / CONTACT</div>
+      <h2>Let's connect.</h2>
+      <div class="contact-box">
+        <p class="section-intro">
+          I'm interested in learning opportunities and entry-level Software Testing
+          or QA Intern roles.
+        </p>
+        <p><strong>Email:</strong> <a class="text-link accent" href="mailto:darshan.csdev@gmail.com">darshan.csdev@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a class="text-link accent" href="https://github.com/darshan-csdev" target="_blank" rel="noopener noreferrer">github.com/darshan-csdev ↗</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Darshan N</span>
+      <span>Built with HTML & CSS · QA Portfolio</span>
+    </div>
+  </footer>
+</body>
+</html>
